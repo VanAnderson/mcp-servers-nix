@@ -12,11 +12,11 @@ buildGoModule rec {
     owner = "hashicorp";
     repo = "terraform-mcp-server";
     rev = "9696fa398403b5ed25089aaf23d5ad15e5bc87f8";
-    hash = lib.fakeHash;
+    hash = "sha256-FcjeEp+uwlfezGlmBd2nSTdfnXuPnSDTxTPlP6CtcrE=";
   };
 
   # Go module dependencies hash
-  vendorHash = lib.fakeHash;
+  vendorHash = "sha256-ObNuenbCmmbkRPKUmdMg+ERfUV+RiS2OEOneJOmteZU=";
 
   # Disable tests if they require network or fail
   doCheck = false;
